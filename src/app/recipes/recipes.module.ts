@@ -1,5 +1,5 @@
 import { NgModule } from "@angular/core";
-import { SharedModule } from "../shared/shared.module";
+
 import { RecipeDetailComponent } from "./recipe-detail/recipe-detail.component";
 import { RecipeEditComponent } from "./recipe-edit/recipe-edit.component";
 import { RecipeItemComponent } from "./recipe-list/recipe-item/recipe-item.component";
@@ -10,14 +10,13 @@ import { RecipesComponent } from "./recipes.component";
 
 @NgModule({
     imports: [
-        SharedModule,
-        RecipesRoutingModule,
-        RecipesComponent,
-        RecipeListComponent,
-        RecipeDetailComponent,
-        RecipeItemComponent,
-        RecipeStartComponent,
-        RecipeEditComponent,
-    ],
+    RecipesRoutingModule,
+    RecipesComponent,
+    RecipeListComponent,
+    RecipeDetailComponent,
+    RecipeItemComponent,
+    RecipeStartComponent,
+    RecipeEditComponent,
+],
 })
 export class RecipesModule { }
