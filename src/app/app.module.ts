@@ -10,18 +10,16 @@ import { HeaderComponent } from './header/header.component';
 import { SharedModule } from './shared/shared.module';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HeaderComponent,
-  ],
-  imports: [
-    BrowserModule,
-    SharedModule,
-    HttpClientModule,
-    AuthModule,
-    AppRoutingModule,
-  ],
-  providers: [{ provide: HTTP_INTERCEPTORS, useClass: AuthInterceptorService, multi: true }],
-  bootstrap: [AppComponent]
+    declarations: [AppComponent],
+    imports: [
+        BrowserModule,
+        SharedModule,
+        HttpClientModule,
+        AuthModule,
+        AppRoutingModule,
+        HeaderComponent,
+    ],
+    providers: [{ provide: HTTP_INTERCEPTORS, useClass: AuthInterceptorService, multi: true }],
+    bootstrap: [AppComponent]
 })
 export class AppModule { }

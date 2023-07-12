@@ -1,8 +1,9 @@
 import { Component, OnDestroy, OnInit, ViewChild } from '@angular/core';
-import { NgForm } from '@angular/forms';
+import { NgForm, FormsModule } from '@angular/forms';
 import { Subscription } from 'rxjs';
 import { Ingredient } from 'src/app/shared/ingredient.model';
 import { ShoppingListService } from '../shopping-list.service';
+import { NgIf } from '@angular/common';
 
 interface ingFormInput {
   ["ingName"]: string;
@@ -11,9 +12,11 @@ interface ingFormInput {
 };
 
 @Component({
-  selector: 'app-shopping-list-edit',
-  templateUrl: './shopping-list-edit.component.html',
-  styleUrls: ['./shopping-list-edit.component.css']
+    selector: 'app-shopping-list-edit',
+    templateUrl: './shopping-list-edit.component.html',
+    styleUrls: ['./shopping-list-edit.component.css'],
+    standalone: true,
+    imports: [FormsModule, NgIf]
 })
 export class ShoppingListEditComponent implements OnInit, OnDestroy {
   @ViewChild("ingForm", { static: false }) ingForm!: NgForm;

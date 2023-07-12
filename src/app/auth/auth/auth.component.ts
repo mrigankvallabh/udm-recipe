@@ -1,14 +1,16 @@
 import { Component } from '@angular/core';
-import { NgForm } from '@angular/forms';
+import { NgForm, FormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
 import { Observable } from 'rxjs';
 import { AuthResponseFireBase, AuthService } from '../auth.service';
+import { NgIf } from '@angular/common';
 
 @Component({
-  selector: 'app-auth',
-  templateUrl: './auth.component.html',
-  styles: [
-  ]
+    selector: 'app-auth',
+    templateUrl: './auth.component.html',
+    styles: [],
+    standalone: true,
+    imports: [NgIf, FormsModule]
 })
 export class AuthComponent {
   isLoginMode = true;

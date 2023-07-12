@@ -4,17 +4,15 @@ import { DropdownDirective } from "./dropdown.directive";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 
 @NgModule({
-  declarations: [
-    DropdownDirective,
-  ],
-  imports: [
-    CommonModule
-  ],
-  exports: [
-    CommonModule,
-    FormsModule,
-    ReactiveFormsModule,
-    DropdownDirective,
-  ],
+    imports: [
+        CommonModule,
+        DropdownDirective
+    ],
+    exports: [
+        CommonModule,
+        FormsModule,
+        ReactiveFormsModule,
+        DropdownDirective,
+    ],
 })
 export class SharedModule { }

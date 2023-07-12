@@ -3,11 +3,15 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { Recipe } from '../recipe.model';
 import { RecipeService } from '../recipe.service';
+import { NgFor } from '@angular/common';
+import { DropdownDirective } from '../../shared/dropdown.directive';
 
 @Component({
-  selector: 'app-recipe-detail',
-  templateUrl: './recipe-detail.component.html',
-  styleUrls: ['./recipe-detail.component.css']
+    selector: 'app-recipe-detail',
+    templateUrl: './recipe-detail.component.html',
+    styleUrls: ['./recipe-detail.component.css'],
+    standalone: true,
+    imports: [DropdownDirective, NgFor]
 })
 export class RecipeDetailComponent implements OnInit, OnDestroy {
   id!: number;
