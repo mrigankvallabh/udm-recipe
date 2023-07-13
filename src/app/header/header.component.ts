@@ -7,11 +7,11 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
 import { NgFor, NgIf } from '@angular/common';
 
 @Component({
-    selector: 'app-header',
-    templateUrl: './header.component.html',
-    styleUrls: ['./header.component.css'],
-    standalone: true,
-    imports: [NgFor, RouterLink, RouterLinkActive, NgIf, DropdownDirective]
+  selector: 'app-header',
+  templateUrl: './header.component.html',
+  styleUrls: ['./header.component.css'],
+  standalone: true,
+  imports: [NgFor, RouterLink, RouterLinkActive, NgIf, DropdownDirective]
 })
 export class HeaderComponent implements OnInit, OnDestroy {
   collapsed = true;

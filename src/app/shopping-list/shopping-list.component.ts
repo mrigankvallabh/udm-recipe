@@ -6,11 +6,11 @@ import { NgFor } from '@angular/common';
 import { ShoppingListEditComponent } from './shopping-list-edit/shopping-list-edit.component';
 
 @Component({
-    selector: 'app-shopping-list',
-    templateUrl: './shopping-list.component.html',
-    styleUrls: ['./shopping-list.component.css'],
-    standalone: true,
-    imports: [ShoppingListEditComponent, NgFor]
+  selector: 'app-shopping-list',
+  templateUrl: './shopping-list.component.html',
+  styleUrls: ['./shopping-list.component.css'],
+  standalone: true,
+  imports: [ShoppingListEditComponent, NgFor]
 })
 export class ShoppingListComponent implements OnInit, OnDestroy {
   ingredients: Ingredient[] = [];

@@ -2,8 +2,8 @@ import { Directive, ElementRef, HostBinding, HostListener, SecurityContext } fro
 import { DomSanitizer } from '@angular/platform-browser';
 
 @Directive({
-    selector: '[appDropdown]',
-    standalone: true
+  selector: '[appDropdown]',
+  standalone: true
 })
 export class DropdownDirective {
   @HostBinding('class.open') isOpen = false;

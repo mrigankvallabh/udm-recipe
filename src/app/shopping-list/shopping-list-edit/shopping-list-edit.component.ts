@@ -12,11 +12,11 @@ interface ingFormInput {
 };
 
 @Component({
-    selector: 'app-shopping-list-edit',
-    templateUrl: './shopping-list-edit.component.html',
-    styleUrls: ['./shopping-list-edit.component.css'],
-    standalone: true,
-    imports: [FormsModule, NgIf]
+  selector: 'app-shopping-list-edit',
+  templateUrl: './shopping-list-edit.component.html',
+  styleUrls: ['./shopping-list-edit.component.css'],
+  standalone: true,
+  imports: [FormsModule, NgIf]
 })
 export class ShoppingListEditComponent implements OnInit, OnDestroy {
   @ViewChild("ingForm", { static: false }) ingForm!: NgForm;

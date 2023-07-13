@@ -6,9 +6,9 @@ import { ShoppingListComponent } from "./shopping-list.component";
 
 @NgModule({
     imports: [
-    ShoppingListRoutingModule,
-    ShoppingListComponent,
-    ShoppingListEditComponent,
-]
+        ShoppingListRoutingModule,
+        ShoppingListComponent,
+        ShoppingListEditComponent,
+    ]
 })
 export class ShoppingListModule { }

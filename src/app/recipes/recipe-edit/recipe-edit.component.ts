@@ -6,11 +6,11 @@ import { RecipeService } from '../recipe.service';
 import { NgFor } from '@angular/common';
 
 @Component({
-    selector: 'app-recipe-edit',
-    templateUrl: './recipe-edit.component.html',
-    styleUrls: ['./recipe-edit.component.css'],
-    standalone: true,
-    imports: [FormsModule, ReactiveFormsModule, NgFor]
+  selector: 'app-recipe-edit',
+  templateUrl: './recipe-edit.component.html',
+  styleUrls: ['./recipe-edit.component.css'],
+  standalone: true,
+  imports: [FormsModule, ReactiveFormsModule, NgFor]
 })
 export class RecipeEditComponent implements OnInit, OnDestroy {
 

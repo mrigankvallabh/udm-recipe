@@ -10,13 +10,13 @@ import { RecipesComponent } from "./recipes.component";
 
 @NgModule({
     imports: [
-    RecipesRoutingModule,
-    RecipesComponent,
-    RecipeListComponent,
-    RecipeDetailComponent,
-    RecipeItemComponent,
-    RecipeStartComponent,
-    RecipeEditComponent,
-],
+        RecipesRoutingModule,
+        RecipesComponent,
+        RecipeListComponent,
+        RecipeDetailComponent,
+        RecipeItemComponent,
+        RecipeStartComponent,
+        RecipeEditComponent,
+    ],
 })
 export class RecipesModule { }
